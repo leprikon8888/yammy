@@ -18,8 +18,8 @@
           <div>
             <h4>Reservations</h4>
             <p>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              <strong>Phone:</strong> {{ footer_items.phone }}<br>
+              <strong>Email:</strong> {{ footer_items.email }}<br>
             </p>
           </div>
         </div>
@@ -29,8 +29,7 @@
           <div>
             <h4>Opening Hours</h4>
             <p>
-              <strong>Mon-Sat: 11AM</strong> - 23PM<br>
-              Sunday: Closed
+                {{footer_items.working_hours|safe}}
             </p>
           </div>
         </div>
@@ -38,10 +37,10 @@
         <div class="col-lg-3 col-md-6 footer-links">
           <h4>Follow Us</h4>
           <div class="social-links d-flex">
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <a href="{{ footer_items.twitter }}" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="{{ footer_items.facebook }}" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="{{ footer_items.instagram }}" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="{{ footer_items.youtube }}" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
